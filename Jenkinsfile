@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout') {
       steps {
         git branch: 'main', url: 'https://github.com/tareklaaouane/jenkins_project.git'
-      }
+        sh 'pwd && ls -la'      }
     }
 
     stage('Build') {
