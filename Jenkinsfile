@@ -1,11 +1,6 @@
 pipeline {
   agent any
 
-  tools {
-    jdk 'JDK17'
-    maven 'Maven3'
-  }
-
   environment {
     APP_NAME    = "myapp"
     DEPLOY_DIR  = "/home/lucifer/Deploy"
